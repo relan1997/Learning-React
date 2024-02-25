@@ -24,7 +24,6 @@ function App() {
       t.id===id? {...t,completed:!t.completed} : t
     }))
   }
-
   useEffect(()=>{
     const todos=JSON.parse(localStorage.getItem('todos'))
 
