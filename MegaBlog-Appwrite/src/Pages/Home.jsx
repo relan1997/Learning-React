@@ -32,7 +32,7 @@ export default function Home()
             <div className='flex flex-wrap'>
                 {posts.map((post)=>{
                     <div key={post.$id}className='p-2 w-1/4'>
-                        <PostCard post={post}/> {/* <PostCard {...post}/> can also be written */}
+                        <PostCard {...post}/> 
                     </div>  // all the individual posts are mapped and inserted
                 })}
                 </div>
