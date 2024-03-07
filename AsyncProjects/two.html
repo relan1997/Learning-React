@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHarshal =function(){ // setTimeout means x der ka time do mujhe uske baad mai apne handler ko execute karunga
+        console.log("Harshal Relan")
+    }
+   const changeText=()=>{
+    document.querySelector("h1").innerHTML="Best JS Course";
+   } 
+    const changeMe=setTimeout(changeText,2000)  //while setInterval bolta hai mai tumhara kaam har x seconds ke baad kardunga n number of times
+   //the above changeMe holds the reference of the setTimeoit that executes the changetText function
+   // now we need an event jaise agar yeh upari function 2 sec main agar nahi hua toh hum upar waale function ka execution rook de
+   document.querySelector("button").addEventListener('click',()=>{ // the clear timout function does the above task
+        clearTimeout(changeMe);
+   })
+
+</script>
+</html>
