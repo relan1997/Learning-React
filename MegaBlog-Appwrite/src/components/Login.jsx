@@ -64,6 +64,18 @@ export default function Login(){
                         }
                     })}//because we are using here useForm therefore as a part of the syntax this part is mandatory and agar ... nahi likha toh kisi aur jagah jahan register use kia ho waha pe value overwrite hojayegi
                     /> {/* yeh jo register ke andar value pass kari hai yeh unique honi chaiye like jiss cheez ke liye hum email de rhe hai woh mention karna hoga */}
+                    <Input
+                    type='password'
+                    label='Password:'
+                    placeholder="Enter the Password"
+                    {...register("password",{
+                        required:true
+                    })}
+                    />
+                    <Button
+                    type='submit'
+                    className='w-full'
+                    >Sign Up</Button>
                 </div>
             </form>  {/* handleSubmit is a key word & ek method hai jisme hum apna method daalte hai toh tell the program ki kya karna hai when a form is submitted */}
             </div> {/* handleSubmit is an event and it's important to use this event only as now in the input fields we need to use the register method and the variables that are used with the register method uska humme state handle karne ki zaroorat nahi hai */}
