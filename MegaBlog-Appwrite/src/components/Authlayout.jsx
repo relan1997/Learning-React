@@ -1,5 +1,5 @@
 //mechanism to protect pages and routes --- naam hum Authlayout bhi de sakte hai as file ka name and function ka name alag ho sakta hai
-import { UseSelector } from "react-redux"
+import { useSelector } from "react-redux"
 import { useEffect,useState } from "react"
 import { useNavigate } from "react-router-dom"
 export default function Protected({children,authentication=true}){

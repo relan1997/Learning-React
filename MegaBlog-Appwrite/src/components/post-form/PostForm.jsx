@@ -3,7 +3,7 @@ import {useForm} from 'react-hook-form'
 import {Button,Input,Select,RTE} from '../index'
 import appwriteService from '../../appwrite/config'
 import { useNavigate } from "react-router-dom"
-import { UseSelector, useSelector } from "react-redux"
+import {  useSelector } from "react-redux"
 
 export default function PostForm({post}){// kisi field ko agar aapko continously monitor karna hai toh watch woh karta hai
     //kisi bhi form ke andar agar value set karni hai toh woh setValue se hogi
